@@ -1,0 +1,36 @@
+body {
+    background-color: #181819;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+.heart {
+    position: relative;
+    height: 160px;
+    width: 100px;
+    background-color: #c51431;
+    transform: rotate(45deg);
+    border-radius: 200px 200px 0 0;
+}
+.heart::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    height: 160px;
+    width: 100px;
+    background-color: #c51431;
+    transform: rotate(-90deg);
+    border-radius: 200px 200px 0 0;
+}
+.heart::after {
+    content: "love";
+    position: absolute;
+    top: 39%;
+    left: 3%;
+    font-size: 40px;
+    transform: rotate(-45deg);
+    font-family: wellington;
+    color: #fff;
+}

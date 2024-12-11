@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .container.black {
+    background-color: black;
+  }
+  .container.white {
+    background-color: white;
+  }
+  
+  .icon {
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+  }
+  .container.black .icon {
+    border: white solid 2px;
+  }
+  .container.white .icon {
+    border: black solid 2px;
+  }
+  
+  #svg-animation {
+    width: 200px;
+  }

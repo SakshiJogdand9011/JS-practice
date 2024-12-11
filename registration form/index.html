@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="registration-form" id="registration-form">
+            <h2>Student Registration</h2>
+            <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="middle-name">Middle Name</label>
+                <input type="text" id="middle-name" name="middle-name">
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="mother-name">Mother's Name</label>
+                <input type="text" id="mother-name" name="mother-name" required>
+            </div>
+           
+
+
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="button" id="otp-button">Get OTP</button>
+
+                <label for="otp">Enter OTP</label>
+                <input type="text" id="otp" name="otp" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+           
+
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+
+            <div class="input-group">
+                <label for="address">Full Address</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="input-group">
+                <label for="department">Department</label>
+                <input type="text" id="department" name="department" required>
+
+                <label for="prn">PRN Number</label>
+                <input type="text" id="prn" name="prn" required>
+            </div>
+
+            <div class="input-group">
+                <label for="photo">Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                <label for="sign">Signature</label>
+                <input type="file" id="sign" name="sign" accept="image/*" required>
+            </div>
+           
+            <a href="../3D-Hover-effect/index.html">
+                Login
+              </a>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
